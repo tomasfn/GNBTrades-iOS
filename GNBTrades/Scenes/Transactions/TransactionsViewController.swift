@@ -16,18 +16,14 @@ class TransactionsViewController: UIViewController {
     var presenter: TransactionsVCPresenter!
     
     static func `init`(with presenter: TransactionsVCPresenter) -> TransactionsViewController {
-        let vc = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(withIdentifier: TransactionsViewController.nameOfClass)
-                as! TransactionsViewController
+        let vc = NavigationHelper.transactionsViewController()
         vc.presenter = presenter
         return vc
     }
     
     override func viewDidLoad() {
         title = "Product SKU: \(presenter.getCurrentProductIdInContext()) Transactions"
-        
-        presenter.setView(self)
-        
+        presenter.setView(self)        
         setUpTable()
     }
 }

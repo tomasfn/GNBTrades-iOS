@@ -32,18 +32,21 @@ extension TransactionsViewController: UITableViewDelegate, UITableViewDataSource
 
     func tableView(_ tableView: UITableView,
                    viewForFooterInSection section: Int) -> UIView? {
+        //Created a footer to display sum of all Transactions
         let footerView = UIView(frame: CGRect(x: 0,
                                               y: 0,
                                               width: self.tableView.frame.width,
                                               height: 70))
         footerView.backgroundColor = .lightGray
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 70))
-        label.font = UIFont.systemFont(ofSize: 20)
-        label.text = "Total sum in EUR: \(presenter.totalAmountSumOfTransactions(in: Currency.EUR))"
-        label.center.x = footerView.center.x
-        label.textAlignment = .center
-        footerView.addSubview(label)
+        let totalLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 70))
+        totalLbl.font = UIFont.systemFont(ofSize: 20)
+        
+        let desiredTotalCurrency = Currency.EUR
+        totalLbl.text = "Total sum in \(desiredTotalCurrency): \(presenter.totalAmountSumOfTransactions(in: desiredTotalCurrency))"
+        totalLbl.center.x = footerView.center.x
+        totalLbl.textAlignment = .center
+        footerView.addSubview(totalLbl)
         
         return footerView
     }

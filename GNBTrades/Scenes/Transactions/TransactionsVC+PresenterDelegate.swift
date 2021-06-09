@@ -9,7 +9,7 @@ import Foundation
 
 extension TransactionsViewController: TransactionsView {
 
-    func reloadTransactionsDetails() {
+    func reloadTableDetails() {
         tableView.reloadData()
     }
     

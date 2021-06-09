@@ -35,6 +35,7 @@
 		8768B333266CD89B00114B8C /* TransactionsVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */; };
 		8768B338266CD8D100114B8C /* TransactionsVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */; };
 		8768B340266CF89600114B8C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B33F266CF89600114B8C /* Currency.swift */; };
+		87B6FF3C2670D352000CB029 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6FF3B2670D352000CB029 /* NavigationHelper.swift */; };
 		C0E2BC4C6081F2C417E5D135 /* Pods_GNBTrades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+TableView.swift"; sourceTree = "<group>"; };
 		8768B33F266CF89600114B8C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		87B6FF3B2670D352000CB029 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		A2FE36D209A1C0BCE8D48E80 /* Pods-GNBTradesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTradesTests.release.xcconfig"; path = "Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests.release.xcconfig"; sourceTree = "<group>"; };
 		C82ED69699E39034D87D8BF1 /* Pods-GNBTrades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades.release.xcconfig"; path = "Target Support Files/Pods-GNBTrades/Pods-GNBTrades.release.xcconfig"; sourceTree = "<group>"; };
 		E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBTrades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 		8768B12B266A833000114B8C /* GNBTrades */ = {
 			isa = PBXGroup;
 			children = (
+				87B6FF3A2670D339000CB029 /* Helpers */,
 				8768B532266FD8EA00114B8C /* Resources */,
 				8768B52D266FD8A300114B8C /* Supporting Files */,
 				8768B52E266FD8BF00114B8C /* Storyboard */,
@@ -340,6 +343,14 @@
 				8768B135266A833200114B8C /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		87B6FF3A2670D339000CB029 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87B6FF3B2670D352000CB029 /* NavigationHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -609,6 +620,7 @@
 				8768B1E8266A9F3B00114B8C /* Rate.swift in Sources */,
 				8768B1EE266A9FEB00114B8C /* Commons.swift in Sources */,
 				8768B2C4266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift in Sources */,
+				87B6FF3C2670D352000CB029 /* NavigationHelper.swift in Sources */,
 				8768B321266C622A00114B8C /* TransactionsVCPresenter.swift in Sources */,
 				8768B292266C12BA00114B8C /* BaseService.swift in Sources */,
 				8768B340266CF89600114B8C /* Currency.swift in Sources */,
@@ -804,7 +816,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.GNBTrades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -824,7 +836,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.GNBTrades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

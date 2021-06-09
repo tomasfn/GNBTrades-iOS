@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TransactionsView: class {
-    func reloadTransactionsDetails()
+    func reloadTableDetails()
     func showError(error: String)
 }
 
