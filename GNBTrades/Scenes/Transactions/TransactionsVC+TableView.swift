@@ -33,10 +33,8 @@ extension TransactionsViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView,
                    viewForFooterInSection section: Int) -> UIView? {
         //Created a footer to display sum of all Transactions
-        let footerView = UIView(frame: CGRect(x: 0,
-                                              y: 0,
-                                              width: self.tableView.frame.width,
-                                              height: 70))
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 70))
+        
         footerView.backgroundColor = .lightGray
         
         let totalLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 70))
