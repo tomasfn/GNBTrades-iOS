@@ -1,5 +1,11 @@
 # GNBTrades-iOS
 
+Stack
+*Swift 4.2
+*iOS 12.1+
+*Xcode 12.4
+*Cocoapods 1.8.4
+
 
 Screens Samples:
 
