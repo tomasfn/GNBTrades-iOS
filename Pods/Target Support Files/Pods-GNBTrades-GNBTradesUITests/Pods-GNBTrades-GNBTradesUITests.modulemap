@@ -1,0 +1,6 @@
+framework module Pods_GNBTrades_GNBTradesUITests {
+  umbrella header "Pods-GNBTrades-GNBTradesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

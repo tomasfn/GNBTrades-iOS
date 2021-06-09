@@ -3,18 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1307CC4D6EECBF9245A1D4E8 /* Pods_GNBTrades_GNBTradesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419D648A22BFE941183FF2F9 /* Pods_GNBTrades_GNBTradesUITests.framework */; };
+		4017127ECBB0394B6A6C67B1 /* Pods_GNBTradesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65A25362EA4BAE40B01D3A1B /* Pods_GNBTradesTests.framework */; };
 		8768B12D266A833000114B8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B12C266A833000114B8C /* AppDelegate.swift */; };
 		8768B12F266A833000114B8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B12E266A833000114B8C /* SceneDelegate.swift */; };
-		8768B131266A833000114B8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B130266A833000114B8C /* ViewController.swift */; };
 		8768B134266A833000114B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8768B132266A833000114B8C /* Main.storyboard */; };
 		8768B136266A833200114B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8768B135266A833200114B8C /* Assets.xcassets */; };
 		8768B139266A833200114B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8768B137266A833200114B8C /* LaunchScreen.storyboard */; };
 		8768B144266A833200114B8C /* GNBTradesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B143266A833200114B8C /* GNBTradesTests.swift */; };
 		8768B14F266A833200114B8C /* GNBTradesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B14E266A833200114B8C /* GNBTradesUITests.swift */; };
+		8768B1E3266A9F3300114B8C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B1E2266A9F3300114B8C /* Transaction.swift */; };
+		8768B1E8266A9F3B00114B8C /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B1E7266A9F3B00114B8C /* Rate.swift */; };
+		8768B1EE266A9FEB00114B8C /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B1ED266A9FEB00114B8C /* Commons.swift */; };
+		8768B21C266AACDC00114B8C /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B21B266AACDC00114B8C /* ProductsViewController.swift */; };
+		8768B224266AACF900114B8C /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B223266AACF900114B8C /* TransactionsViewController.swift */; };
+		8768B237266AB1FC00114B8C /* RemoteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B236266AB1FC00114B8C /* RemoteDataStore.swift */; };
+		8768B258266AC44600114B8C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B257266AC44600114B8C /* Product.swift */; };
+		8768B271266ADC4400114B8C /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B26F266ADC4400114B8C /* ProductCollectionViewCell.swift */; };
+		8768B272266ADC4400114B8C /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8768B270266ADC4400114B8C /* ProductCollectionViewCell.xib */; };
+		8768B278266ADC6800114B8C /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B276266ADC6800114B8C /* TransactionTableViewCell.swift */; };
+		8768B279266ADC6800114B8C /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8768B277266ADC6800114B8C /* TransactionTableViewCell.xib */; };
+		8768B292266C12BA00114B8C /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B291266C12BA00114B8C /* BaseService.swift */; };
+		8768B2BA266C26A500114B8C /* ProductsVC+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B2B9266C26A500114B8C /* ProductsVC+CollectionView.swift */; };
+		8768B2BF266C26D800114B8C /* ProductsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B2BE266C26D800114B8C /* ProductsVCPresenter.swift */; };
+		8768B2C4266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B2C3266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift */; };
+		8768B321266C622A00114B8C /* TransactionsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */; };
+		8768B333266CD89B00114B8C /* TransactionsVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */; };
+		8768B338266CD8D100114B8C /* TransactionsVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */; };
+		8768B340266CF89600114B8C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B33F266CF89600114B8C /* Currency.swift */; };
+		C0E2BC4C6081F2C417E5D135 /* Pods_GNBTrades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F9FB85354F10F9211547385 /* Pods-GNBTrades-GNBTradesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades-GNBTradesUITests.release.xcconfig"; path = "Target Support Files/Pods-GNBTrades-GNBTradesUITests/Pods-GNBTrades-GNBTradesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		419D648A22BFE941183FF2F9 /* Pods_GNBTrades_GNBTradesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBTrades_GNBTradesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4410B26C5C374AFDA8CD9325 /* Pods-GNBTradesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTradesTests.debug.xcconfig"; path = "Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4586CF44FBE73FA3755888EC /* Pods-GNBTrades.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades.debug.xcconfig"; path = "Target Support Files/Pods-GNBTrades/Pods-GNBTrades.debug.xcconfig"; sourceTree = "<group>"; };
+		65A25362EA4BAE40B01D3A1B /* Pods_GNBTradesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBTradesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8768B129266A833000114B8C /* GNBTrades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNBTrades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8768B12C266A833000114B8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8768B12E266A833000114B8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8768B130266A833000114B8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8768B133266A833000114B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8768B135266A833200114B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8768B138266A833200114B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +74,29 @@
 		8768B14A266A833200114B8C /* GNBTradesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBTradesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8768B14E266A833200114B8C /* GNBTradesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNBTradesUITests.swift; sourceTree = "<group>"; };
 		8768B150266A833200114B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8768B1E2266A9F3300114B8C /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		8768B1E7266A9F3B00114B8C /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		8768B1ED266A9FEB00114B8C /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		8768B21B266AACDC00114B8C /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		8768B223266AACF900114B8C /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		8768B236266AB1FC00114B8C /* RemoteDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataStore.swift; sourceTree = "<group>"; };
+		8768B257266AC44600114B8C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8768B26F266ADC4400114B8C /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		8768B270266ADC4400114B8C /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		8768B276266ADC6800114B8C /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		8768B277266ADC6800114B8C /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		8768B291266C12BA00114B8C /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		8768B2B9266C26A500114B8C /* ProductsVC+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsVC+CollectionView.swift"; sourceTree = "<group>"; };
+		8768B2BE266C26D800114B8C /* ProductsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVCPresenter.swift; sourceTree = "<group>"; };
+		8768B2C3266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVCPresenter.swift; sourceTree = "<group>"; };
+		8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+TableView.swift"; sourceTree = "<group>"; };
+		8768B33F266CF89600114B8C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		A2FE36D209A1C0BCE8D48E80 /* Pods-GNBTradesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTradesTests.release.xcconfig"; path = "Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C82ED69699E39034D87D8BF1 /* Pods-GNBTrades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades.release.xcconfig"; path = "Target Support Files/Pods-GNBTrades/Pods-GNBTrades.release.xcconfig"; sourceTree = "<group>"; };
+		E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNBTrades.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85E1EBFFEDDF024B5A619E6 /* Pods-GNBTrades-GNBTradesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades-GNBTradesUITests.debug.xcconfig"; path = "Target Support Files/Pods-GNBTrades-GNBTradesUITests/Pods-GNBTrades-GNBTradesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E2BC4C6081F2C417E5D135 /* Pods_GNBTrades.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4017127ECBB0394B6A6C67B1 /* Pods_GNBTradesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +120,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1307CC4D6EECBF9245A1D4E8 /* Pods_GNBTrades_GNBTradesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B8A77DDD047B5EAA4CB11A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4586CF44FBE73FA3755888EC /* Pods-GNBTrades.debug.xcconfig */,
+				C82ED69699E39034D87D8BF1 /* Pods-GNBTrades.release.xcconfig */,
+				F85E1EBFFEDDF024B5A619E6 /* Pods-GNBTrades-GNBTradesUITests.debug.xcconfig */,
+				2F9FB85354F10F9211547385 /* Pods-GNBTrades-GNBTradesUITests.release.xcconfig */,
+				4410B26C5C374AFDA8CD9325 /* Pods-GNBTradesTests.debug.xcconfig */,
+				A2FE36D209A1C0BCE8D48E80 /* Pods-GNBTradesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		674A283A6669BAE60C276C07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */,
+				419D648A22BFE941183FF2F9 /* Pods_GNBTrades_GNBTradesUITests.framework */,
+				65A25362EA4BAE40B01D3A1B /* Pods_GNBTradesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8768B120266A833000114B8C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +157,8 @@
 				8768B142266A833200114B8C /* GNBTradesTests */,
 				8768B14D266A833200114B8C /* GNBTradesUITests */,
 				8768B12A266A833000114B8C /* Products */,
+				30B8A77DDD047B5EAA4CB11A /* Pods */,
+				674A283A6669BAE60C276C07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +175,16 @@
 		8768B12B266A833000114B8C /* GNBTrades */ = {
 			isa = PBXGroup;
 			children = (
-				8768B12C266A833000114B8C /* AppDelegate.swift */,
-				8768B12E266A833000114B8C /* SceneDelegate.swift */,
-				8768B130266A833000114B8C /* ViewController.swift */,
-				8768B132266A833000114B8C /* Main.storyboard */,
-				8768B135266A833200114B8C /* Assets.xcassets */,
-				8768B137266A833200114B8C /* LaunchScreen.storyboard */,
+				8768B532266FD8EA00114B8C /* Resources */,
+				8768B52D266FD8A300114B8C /* Supporting Files */,
+				8768B52E266FD8BF00114B8C /* Storyboard */,
+				8768B52C266FD88F00114B8C /* Startup */,
+				8768B2B7266C262F00114B8C /* Scenes */,
+				8768B248266AB77300114B8C /* Views */,
+				8768B241266AB4B900114B8C /* Domain */,
+				8768B23B266AB2E800114B8C /* Presenters */,
+				8768B230266AB17600114B8C /* Service */,
+				8768B1EC266A9FE200114B8C /* Utils */,
 				8768B13A266A833200114B8C /* Info.plist */,
 			);
 			path = GNBTrades;
@@ -128,6 +208,140 @@
 			path = GNBTradesUITests;
 			sourceTree = "<group>";
 		};
+		8768B1E1266A9F2900114B8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8768B1E2266A9F3300114B8C /* Transaction.swift */,
+				8768B1E7266A9F3B00114B8C /* Rate.swift */,
+				8768B257266AC44600114B8C /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8768B1EC266A9FE200114B8C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8768B1ED266A9FEB00114B8C /* Commons.swift */,
+				8768B33F266CF89600114B8C /* Currency.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8768B230266AB17600114B8C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8768B236266AB1FC00114B8C /* RemoteDataStore.swift */,
+				8768B291266C12BA00114B8C /* BaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8768B23B266AB2E800114B8C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				8768B2BE266C26D800114B8C /* ProductsVCPresenter.swift */,
+				8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		8768B241266AB4B900114B8C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8768B1E1266A9F2900114B8C /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8768B248266AB77300114B8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8768B26E266AD72700114B8C /* collectionViewCells */,
+				8768B26D266AD71D00114B8C /* tableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8768B26D266AD71D00114B8C /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8768B276266ADC6800114B8C /* TransactionTableViewCell.swift */,
+				8768B277266ADC6800114B8C /* TransactionTableViewCell.xib */,
+			);
+			path = tableViewCells;
+			sourceTree = "<group>";
+		};
+		8768B26E266AD72700114B8C /* collectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8768B26F266ADC4400114B8C /* ProductCollectionViewCell.swift */,
+				8768B270266ADC4400114B8C /* ProductCollectionViewCell.xib */,
+			);
+			path = collectionViewCells;
+			sourceTree = "<group>";
+		};
+		8768B2B7266C262F00114B8C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8768B32B266CD69F00114B8C /* Transactions */,
+				8768B2B8266C263500114B8C /* Products */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8768B2B8266C263500114B8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8768B21B266AACDC00114B8C /* ProductsViewController.swift */,
+				8768B2B9266C26A500114B8C /* ProductsVC+CollectionView.swift */,
+				8768B2C3266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		8768B32B266CD69F00114B8C /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				8768B223266AACF900114B8C /* TransactionsViewController.swift */,
+				8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */,
+				8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		8768B52C266FD88F00114B8C /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				8768B12C266A833000114B8C /* AppDelegate.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		8768B52D266FD8A300114B8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8768B12E266A833000114B8C /* SceneDelegate.swift */,
+				8768B137266A833200114B8C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8768B52E266FD8BF00114B8C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8768B132266A833000114B8C /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8768B532266FD8EA00114B8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8768B135266A833200114B8C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +349,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8768B153266A833200114B8C /* Build configuration list for PBXNativeTarget "GNBTrades" */;
 			buildPhases = (
+				E316C8BE37CD340A77B2EF57 /* [CP] Check Pods Manifest.lock */,
 				8768B125266A833000114B8C /* Sources */,
 				8768B126266A833000114B8C /* Frameworks */,
 				8768B127266A833000114B8C /* Resources */,
+				7728CA8B71209546769D93E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +368,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8768B156266A833200114B8C /* Build configuration list for PBXNativeTarget "GNBTradesTests" */;
 			buildPhases = (
+				EAA61CBCE1CADD4B27C245BD /* [CP] Check Pods Manifest.lock */,
 				8768B13B266A833200114B8C /* Sources */,
 				8768B13C266A833200114B8C /* Frameworks */,
 				8768B13D266A833200114B8C /* Resources */,
+				97DC379677DA235E8F91D90C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +388,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8768B159266A833200114B8C /* Build configuration list for PBXNativeTarget "GNBTradesUITests" */;
 			buildPhases = (
+				B6F7565EE83DEB66C68E3FF2 /* [CP] Check Pods Manifest.lock */,
 				8768B146266A833200114B8C /* Sources */,
 				8768B147266A833200114B8C /* Frameworks */,
 				8768B148266A833200114B8C /* Resources */,
+				6E10D67D7A8CC2B5401CA00F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,8 +451,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8768B279266ADC6800114B8C /* TransactionTableViewCell.xib in Resources */,
 				8768B139266A833200114B8C /* LaunchScreen.storyboard in Resources */,
 				8768B136266A833200114B8C /* Assets.xcassets in Resources */,
+				8768B272266ADC4400114B8C /* ProductCollectionViewCell.xib in Resources */,
 				8768B134266A833000114B8C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,14 +475,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E10D67D7A8CC2B5401CA00F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTrades-GNBTradesUITests/Pods-GNBTrades-GNBTradesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTrades-GNBTradesUITests/Pods-GNBTrades-GNBTradesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNBTrades-GNBTradesUITests/Pods-GNBTrades-GNBTradesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7728CA8B71209546769D93E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTrades/Pods-GNBTrades-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTrades/Pods-GNBTrades-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNBTrades/Pods-GNBTrades-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DC379677DA235E8F91D90C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F7565EE83DEB66C68E3FF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBTrades-GNBTradesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E316C8BE37CD340A77B2EF57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBTrades-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAA61CBCE1CADD4B27C245BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNBTradesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8768B125266A833000114B8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8768B131266A833000114B8C /* ViewController.swift in Sources */,
+				8768B278266ADC6800114B8C /* TransactionTableViewCell.swift in Sources */,
 				8768B12D266A833000114B8C /* AppDelegate.swift in Sources */,
+				8768B2BA266C26A500114B8C /* ProductsVC+CollectionView.swift in Sources */,
+				8768B271266ADC4400114B8C /* ProductCollectionViewCell.swift in Sources */,
+				8768B258266AC44600114B8C /* Product.swift in Sources */,
+				8768B1E3266A9F3300114B8C /* Transaction.swift in Sources */,
+				8768B1E8266A9F3B00114B8C /* Rate.swift in Sources */,
+				8768B1EE266A9FEB00114B8C /* Commons.swift in Sources */,
+				8768B2C4266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift in Sources */,
+				8768B321266C622A00114B8C /* TransactionsVCPresenter.swift in Sources */,
+				8768B292266C12BA00114B8C /* BaseService.swift in Sources */,
+				8768B340266CF89600114B8C /* Currency.swift in Sources */,
+				8768B333266CD89B00114B8C /* TransactionsVC+PresenterDelegate.swift in Sources */,
 				8768B12F266A833000114B8C /* SceneDelegate.swift in Sources */,
+				8768B21C266AACDC00114B8C /* ProductsViewController.swift in Sources */,
+				8768B2BF266C26D800114B8C /* ProductsVCPresenter.swift in Sources */,
+				8768B338266CD8D100114B8C /* TransactionsVC+TableView.swift in Sources */,
+				8768B224266AACF900114B8C /* TransactionsViewController.swift in Sources */,
+				8768B237266AB1FC00114B8C /* RemoteDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +791,7 @@
 		};
 		8768B154266A833200114B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4586CF44FBE73FA3755888EC /* Pods-GNBTrades.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +811,7 @@
 		};
 		8768B155266A833200114B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82ED69699E39034D87D8BF1 /* Pods-GNBTrades.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +831,7 @@
 		};
 		8768B157266A833200114B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4410B26C5C374AFDA8CD9325 /* Pods-GNBTradesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +854,7 @@
 		};
 		8768B158266A833200114B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FE36D209A1C0BCE8D48E80 /* Pods-GNBTradesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +877,7 @@
 		};
 		8768B15A266A833200114B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85E1EBFFEDDF024B5A619E6 /* Pods-GNBTrades-GNBTradesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +898,7 @@
 		};
 		8768B15B266A833200114B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F9FB85354F10F9211547385 /* Pods-GNBTrades-GNBTradesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
