@@ -22,3 +22,4 @@ struct Rate: Codable, Equatable, Hashable {
         return lhs.from == rhs.from && lhs.to == rhs.to && lhs.rate == rhs.rate
     }
 }
+

@@ -9,7 +9,7 @@ import Foundation
 
 protocol TransactionsView: class {
     func reloadTableDetails()
-    func showError(error: String)
+    func showError(message: String)
 }
 
 protocol TransactionCellView {
@@ -20,8 +20,8 @@ class TransactionsVCPresenter {
     
     private weak var view: TransactionsView?
     
-    private var transactions = [Transaction]()
-    private var rates = [Rate]()
+    private var transactions: [Transaction] = []
+    private var rates: [Rate] = []
                 
     init(transactions: [Transaction], rates: [Rate]) {
         self.transactions = transactions
@@ -32,47 +32,18 @@ class TransactionsVCPresenter {
         self.view = view
     }
         
-    func totalAmountSumOfTransactions(in currency: Currency) -> Double {
+    func totalAmountSumOfTransactions(in desiredCurrency: Currency) -> NSDecimalNumber {
         
-        var totalSum = Double()
-        var currencyConversion: Currency!
+        var total = NSDecimalNumber.zero
+        let conversorHelper = ConversorHelper(rates: rates)
         
-        for transaction in transactions {
-            currencyConversion = Currency(rawValue: transaction.currency)
-            
-            switch currencyConversion {
-            case currency:
-                //Si la currency actual de la transaccion es la establecida, la sumo
-                totalSum = totalSum + Double(transaction.amount)!
-            default:
-                //Sino, creo conversiones previas para obtener el valor en esa moneda
-                let rateToUse = rates.filter {$0.from == currencyConversion.rawValue }
-                
-                for rate in rateToUse {
-                    //Evaluo si es conversion directa, y sumo
-                    let into = rate.to
-                    if into == currency.rawValue {
-                        let converted1 = (Double(rate.rate)! * Double(transaction.amount)!)
-                        let decimal = NSDecimalNumber(value: converted1)
-                        totalSum = Double(truncating: decimal.roundHalfToEvenBankingRounding()) + totalSum
-                    } else {
-                        //Sino es conversion directa, aplicamos mas conversiones
-                        let ratesToUse2 = rates.filter { $0.from == transaction.currency }
-                        
-                        for rat in ratesToUse2 {
-                            let into2 = rat.to
-                            if into2 == currency.rawValue {
-                                let converted2 = (Double(rat.rate)! * Double(transaction.amount)!)
-                                let decimal = NSDecimalNumber(value: converted2)
-                                totalSum = Double(truncating: decimal.roundHalfToEvenBankingRounding()) + totalSum
-                            }
-                        }
-                    }
-                }
+        transactions.forEach { (transaction) in
+            if let convertedNumber = conversorHelper.convert(NSDecimalNumber(string: transaction.amount), from: transaction.currency, to: desiredCurrency.rawValue) {
+                total = total.adding(convertedNumber)
             }
         }
         
-        return totalSum.rounded()
+        return total.makeRoundingNumber(with: 2)
     }
     
     func getCurrentProductIdInContext() -> String {

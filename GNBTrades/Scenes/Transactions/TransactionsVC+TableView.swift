@@ -42,8 +42,8 @@ extension TransactionsViewController: UITableViewDelegate, UITableViewDataSource
         let totalLbl = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 70))
         totalLbl.font = UIFont.systemFont(ofSize: 20)
         
-        let desiredTotalCurrency = Currency.EUR
-        totalLbl.text = "Total sum in \(desiredTotalCurrency): \(presenter.totalAmountSumOfTransactions(in: desiredTotalCurrency))"
+        let desiredCurrency = Currency.EUR
+        totalLbl.text = "Total sum in \(desiredCurrency): \(presenter.totalAmountSumOfTransactions(in: desiredCurrency))"
         totalLbl.center.x = footerView.center.x
         totalLbl.textAlignment = .center
         footerView.addSubview(totalLbl)

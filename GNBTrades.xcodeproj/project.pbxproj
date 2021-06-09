@@ -34,7 +34,9 @@
 		8768B321266C622A00114B8C /* TransactionsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */; };
 		8768B333266CD89B00114B8C /* TransactionsVC+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */; };
 		8768B338266CD8D100114B8C /* TransactionsVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */; };
-		8768B340266CF89600114B8C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8768B33F266CF89600114B8C /* Currency.swift */; };
+		879C3F62267113B3005832CF /* UIViewController+ShowDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C3F61267113B3005832CF /* UIViewController+ShowDialog.swift */; };
+		879C3F6F26711525005832CF /* ConversorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C3F6E26711525005832CF /* ConversorHelper.swift */; };
+		879C3F95267132B5005832CF /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879C3F94267132B5005832CF /* Currency.swift */; };
 		87B6FF3C2670D352000CB029 /* NavigationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B6FF3B2670D352000CB029 /* NavigationHelper.swift */; };
 		C0E2BC4C6081F2C417E5D135 /* Pods_GNBTrades.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E111348379EEBD76CB709557 /* Pods_GNBTrades.framework */; };
 /* End PBXBuildFile section */
@@ -93,7 +95,9 @@
 		8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVCPresenter.swift; sourceTree = "<group>"; };
 		8768B332266CD89A00114B8C /* TransactionsVC+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+PresenterDelegate.swift"; sourceTree = "<group>"; };
 		8768B337266CD8D100114B8C /* TransactionsVC+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsVC+TableView.swift"; sourceTree = "<group>"; };
-		8768B33F266CF89600114B8C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		879C3F61267113B3005832CF /* UIViewController+ShowDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowDialog.swift"; sourceTree = "<group>"; };
+		879C3F6E26711525005832CF /* ConversorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorHelper.swift; sourceTree = "<group>"; };
+		879C3F94267132B5005832CF /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		87B6FF3B2670D352000CB029 /* NavigationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHelper.swift; sourceTree = "<group>"; };
 		A2FE36D209A1C0BCE8D48E80 /* Pods-GNBTradesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTradesTests.release.xcconfig"; path = "Target Support Files/Pods-GNBTradesTests/Pods-GNBTradesTests.release.xcconfig"; sourceTree = "<group>"; };
 		C82ED69699E39034D87D8BF1 /* Pods-GNBTrades.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNBTrades.release.xcconfig"; path = "Target Support Files/Pods-GNBTrades/Pods-GNBTrades.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,17 +181,18 @@
 		8768B12B266A833000114B8C /* GNBTrades */ = {
 			isa = PBXGroup;
 			children = (
-				87B6FF3A2670D339000CB029 /* Helpers */,
-				8768B532266FD8EA00114B8C /* Resources */,
-				8768B52D266FD8A300114B8C /* Supporting Files */,
-				8768B52E266FD8BF00114B8C /* Storyboard */,
-				8768B52C266FD88F00114B8C /* Startup */,
 				8768B2B7266C262F00114B8C /* Scenes */,
-				8768B248266AB77300114B8C /* Views */,
-				8768B241266AB4B900114B8C /* Domain */,
+				8768B52E266FD8BF00114B8C /* Storyboards */,
+				8768B1E1266A9F2900114B8C /* Models */,
 				8768B23B266AB2E800114B8C /* Presenters */,
 				8768B230266AB17600114B8C /* Service */,
-				8768B1EC266A9FE200114B8C /* Utils */,
+				8768B248266AB77300114B8C /* Views */,
+				8768B532266FD8EA00114B8C /* Resources */,
+				87B6FF3A2670D339000CB029 /* Helpers */,
+				8768B52D266FD8A300114B8C /* Supporting Files */,
+				8768B52C266FD88F00114B8C /* Startup */,
+				879C3F932671329E005832CF /* Utils */,
+				879C3F5626711179005832CF /* Extensions */,
 				8768B13A266A833200114B8C /* Info.plist */,
 			);
 			path = GNBTrades;
@@ -221,15 +226,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8768B1EC266A9FE200114B8C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				8768B1ED266A9FEB00114B8C /* Commons.swift */,
-				8768B33F266CF89600114B8C /* Currency.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		8768B230266AB17600114B8C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,14 +242,6 @@
 				8768B320266C622A00114B8C /* TransactionsVCPresenter.swift */,
 			);
 			path = Presenters;
-			sourceTree = "<group>";
-		};
-		8768B241266AB4B900114B8C /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				8768B1E1266A9F2900114B8C /* Models */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		8768B248266AB77300114B8C /* Views */ = {
@@ -329,12 +317,12 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8768B52E266FD8BF00114B8C /* Storyboard */ = {
+		8768B52E266FD8BF00114B8C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				8768B132266A833000114B8C /* Main.storyboard */,
 			);
-			path = Storyboard;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8768B532266FD8EA00114B8C /* Resources */ = {
@@ -345,10 +333,44 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		879C3F5626711179005832CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				879C3F69267113F7005832CF /* Foundation */,
+				879C3F602671138B005832CF /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		879C3F602671138B005832CF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				879C3F61267113B3005832CF /* UIViewController+ShowDialog.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		879C3F69267113F7005832CF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8768B1ED266A9FEB00114B8C /* Commons.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		879C3F932671329E005832CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				879C3F94267132B5005832CF /* Currency.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		87B6FF3A2670D339000CB029 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				87B6FF3B2670D352000CB029 /* NavigationHelper.swift */,
+				879C3F6E26711525005832CF /* ConversorHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -612,18 +634,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8768B278266ADC6800114B8C /* TransactionTableViewCell.swift in Sources */,
+				879C3F62267113B3005832CF /* UIViewController+ShowDialog.swift in Sources */,
 				8768B12D266A833000114B8C /* AppDelegate.swift in Sources */,
 				8768B2BA266C26A500114B8C /* ProductsVC+CollectionView.swift in Sources */,
 				8768B271266ADC4400114B8C /* ProductCollectionViewCell.swift in Sources */,
 				8768B258266AC44600114B8C /* Product.swift in Sources */,
 				8768B1E3266A9F3300114B8C /* Transaction.swift in Sources */,
+				879C3F6F26711525005832CF /* ConversorHelper.swift in Sources */,
 				8768B1E8266A9F3B00114B8C /* Rate.swift in Sources */,
 				8768B1EE266A9FEB00114B8C /* Commons.swift in Sources */,
 				8768B2C4266C2A1C00114B8C /* ProductsVC+PresenterDelegate.swift in Sources */,
 				87B6FF3C2670D352000CB029 /* NavigationHelper.swift in Sources */,
 				8768B321266C622A00114B8C /* TransactionsVCPresenter.swift in Sources */,
 				8768B292266C12BA00114B8C /* BaseService.swift in Sources */,
-				8768B340266CF89600114B8C /* Currency.swift in Sources */,
+				879C3F95267132B5005832CF /* Currency.swift in Sources */,
 				8768B333266CD89B00114B8C /* TransactionsVC+PresenterDelegate.swift in Sources */,
 				8768B12F266A833000114B8C /* SceneDelegate.swift in Sources */,
 				8768B21C266AACDC00114B8C /* ProductsViewController.swift in Sources */,
@@ -816,7 +840,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.GNBTrades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -836,7 +860,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.GNBTrades;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

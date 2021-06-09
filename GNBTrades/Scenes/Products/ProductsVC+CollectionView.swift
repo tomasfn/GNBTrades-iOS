@@ -30,7 +30,6 @@ extension ProductsViewController: UICollectionViewDelegate, UICollectionViewData
         if let collection = self.collectionView{
             let width = (collection.bounds.width - totalSpacing)/numberOfItemsPerRow
             return CGSize(width: width, height: width)
-            
         }else{
             return CGSize(width: 0, height: 0)
         }

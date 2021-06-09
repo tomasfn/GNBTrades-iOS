@@ -23,8 +23,8 @@ extension ProductsViewController: ProductsView {
         collectionView.reloadData()
     }
     
-    func showError(error: String) {
-        print(error)
+    func showError(message: String) {
+        showAlertDialog(title: "Error", message: message)
     }
     
     func showTransactions(nextPresenter: TransactionsVCPresenter) {

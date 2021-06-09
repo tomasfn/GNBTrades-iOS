@@ -13,7 +13,7 @@ extension TransactionsViewController: TransactionsView {
         tableView.reloadData()
     }
     
-    func showError(error: String) {
-        print(error)
+    func showError(message: String) {
+        showAlertDialog(title: "Error", message: message)
     }
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import UIKit
 
 extension NSObject {
     public class var nameOfClass: String {
@@ -15,17 +14,16 @@ extension NSObject {
 }
 
 extension NSDecimalNumber {
+    
     func roundHalfToEvenBankingRounding() -> NSDecimalNumber {
         let handler = NSDecimalNumberHandler(roundingMode: NSDecimalNumber.RoundingMode.bankers, scale: 2, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false)
         let rounded = self.rounding(accordingToBehavior: handler)
-        
         return rounded
+    }
+
+    func makeRoundingNumber(with scale: Int16) -> NSDecimalNumber {
+        let numberHandler = NSDecimalNumberHandler(roundingMode: .plain, scale: scale, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false)
+        return self.rounding(accordingToBehavior: numberHandler)
     }
 }
 
-extension Double {
-    func roundedByTwoDecimals() -> Double {
-        let divisor = pow(10.0, Double(2))
-        return (self * divisor).rounded() / divisor
-    }
-}

@@ -15,7 +15,7 @@ class ProductCollectionViewCell: UICollectionViewCell, ProductCellView {
         super.awakeFromNib()
     }
     
-    func displaySku(sku: String) {
+    func displayProductSku(sku: String) {
         skuNumber.text = "SKU: \(sku)"
     }
 }

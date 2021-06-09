@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 class TransactionsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
