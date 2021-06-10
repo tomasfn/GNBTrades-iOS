@@ -38,6 +38,7 @@ class ProductsVCPresenter {
     }
     
     func fectTransactions() {
+        
         view?.showIndicator()
         dataStore.getTransactions { [weak self] (transactions, error) in
             guard let self = self else { return }
@@ -54,6 +55,7 @@ class ProductsVCPresenter {
     }
     
     func fetchRates() {
+        
         dataStore.getRates { [weak self] (rates, error) in
             guard let self = self else { return }
             if let error = error {
